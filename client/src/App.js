@@ -1,12 +1,12 @@
 import React from "react";
-import Nav from "./components/Nav";
-import Intro from "./components/Intro";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
-      <Nav />
-      <Intro />
+      <Header />
+      <Footer />
     </div>
   );
 }

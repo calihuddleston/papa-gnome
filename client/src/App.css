@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Righteous&display=swap');
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,104 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#papa-header {
+  font-family: 'Abril Fatface';
+  font-size: 35px;
+}
+
+#nav-section{
+  background-color: #BA1705;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly */
+}
+
+.page-links{
+  padding: 15px;
+  position: relative;
+}
+
+
+
+
+header {
+  position: relative;
+  height: 900px;
+  max-height: 900px;
+  min-height: 700px; 
+  width: 100%;
+  background:
+  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2522584033613445) 0%),
+    url('./assets/produce-table.jpg') 
+    no-repeat center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  text-align: center;
+}
+
+#login{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #C5D1C9;
+  width: 50%;
+  padding: 50px;
+  border-radius: 10px;
+  margin-left: 250px;
+  margin-top: 30px;
+}
+
+#login-title{
+  font-size: 25px;
+  font-weight: 900;
+  font-family: "Abril Fatface";
+  color: white;
+}
+
+#login-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+input{
+  margin: 5px;
+}
+
+button {
+  background-color: #9F6510;
+  width: 25%;
+  border-radius: 5px;
+  margin: 5px;
+  color: white;
+  font-family: "Abril Fatface";
+}
+
+footer {
+  background-color: #B5A57C;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+#copyright {
+  display: flex;
+  justify-content: center;
 }
