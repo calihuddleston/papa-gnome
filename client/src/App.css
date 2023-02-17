@@ -82,59 +82,118 @@ header {
   text-align: center;
 }
 
+.gnomeface {
+  animation: bounce-in 1s ease
+}
+
+/* @keyframes hithere {
+  30% { transform: scale(1.2); }
+  40%, 60% { transform: rotate(-20deg) scale(1.2); }
+  50% { transform: rotate(20deg) scale(1.2); }
+  70% { transform: rotate(0deg) scale(1.2); }
+  100% { transform: scale(1); }
+} */
+
+#login-section {
+  display: flex;
+  justify-content: center;
+  /* animation: bounce-in 2s ease-in; */
+}
+
+@keyframes  bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% { transform: scale(.9); }
+  100% { transform: scale(1); }
+}
+
+
 #login{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #C5D1C9;
-  width: 50%;
+  background-color: white;
   padding: 50px;
   border-radius: 10px;
-  margin-left: 250px;
-  margin-top: 30px;
+  margin-top: 150px;
+  height: 500px;
 }
 
 #login-title{
   font-size: 25px;
-  font-weight: 900;
-  font-family: "Abril Fatface";
-  color: white;
+  font-weight: 500;
 }
 
 #login-form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  margin: 15px;
+  flex-wrap: wrap;
 }
 
 input{
-  margin: 5px;
+  margin: 50px;
 }
 
-button {
-  background-color: #9F6510;
-  width: 25%;
+#login-button {
+  background-color:#BA1705 ;
+  width: 50%;
+  padding: 5px;
   border-radius: 5px;
   margin: 5px;
-  color: white;
-  font-family: "Abril Fatface";
+  color: white
+}
+
+#email, #pass {
+  margin: 10px;
+  border: #BA1705 1px solid;
+  border-radius: 5px;
+}
+
+#signup-prompt {
+font-size: 10px;
+color: gray;
+}
+
+#signup-link {
+  color:#BA1705
 }
 
 footer {
-  background-color: #B5A57C;
+  background-color: #b5a57cb7;
   color: white;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  text-align: center;
+  flex-direction: column;
 }
 
 #footer-links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin: 20px;
+  justify-content: flex-end;
 }
 
-#copyright {
+#overview, #resources {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 50px;
+  margin-right: 50px;
 }
+
+#info {
+  margin-bottom: 
+    20px;
+  };
+
+  .links {
+    text-decoration: solid;
+  }

@@ -1,5 +1,4 @@
 import React from "react";
-import papaGnome from "../assets/papaGnome.png";
 import { Icon } from "@iconify/react";
 import Login from "./Login";
 
@@ -32,12 +31,7 @@ const Header = () => {
       </div>
 
       <header>
-        <div className="flex justify-center">
-          <img src={papaGnome} className="h-40 w-40 m-10"></img>
-        </div>
         <div className="flex justify-center text-xl flex-col">
-          <h1>Hello there!</h1>
-          <p></p>
           <Login id="login-link" />
         </div>
       </header>
