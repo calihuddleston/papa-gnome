@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 
 .App {
   text-align: center;
@@ -38,9 +39,22 @@
     transform: rotate(360deg);
   }
 }
-
+body {
+  position: relative;
+  height: 900px;
+  max-height: 900px;
+  min-height: 700px; 
+  width: 100%;
+  background:
+  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2522584033613445) 0%),
+    url('./assets/produce-table.jpg') 
+    no-repeat center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  text-align: center;
+} 
 #papa-header {
-  font-family: 'Abril Fatface';
+  font-family: 'Berkshire Swash', cursive;
   font-size: 35px;
 }
 
@@ -64,40 +78,8 @@
   position: relative;
 }
 
-
-
-
-header {
-  position: relative;
-  height: 900px;
-  max-height: 900px;
-  min-height: 700px; 
-  width: 100%;
-  background:
-  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2522584033613445) 0%),
-    url('./assets/produce-table.jpg') 
-    no-repeat center;
-  background-size: cover !important;
-  -webkit-background-size: cover !important;
-  text-align: center;
-}
-
 .gnomeface {
-  animation: bounce-in 1s ease
-}
-
-/* @keyframes hithere {
-  30% { transform: scale(1.2); }
-  40%, 60% { transform: rotate(-20deg) scale(1.2); }
-  50% { transform: rotate(20deg) scale(1.2); }
-  70% { transform: rotate(0deg) scale(1.2); }
-  100% { transform: scale(1); }
-} */
-
-#login-section {
-  display: flex;
-  justify-content: center;
-  /* animation: bounce-in 2s ease-in; */
+  animation: bounce-in 2s ease;
 }
 
 @keyframes  bounce-in {
@@ -113,6 +95,10 @@ header {
   100% { transform: scale(1); }
 }
 
+#login-section {
+  display: flex;
+  justify-content: center;
+}
 
 #login{
   display: flex;
@@ -121,13 +107,26 @@ header {
   background-color: white;
   padding: 50px;
   border-radius: 10px;
-  margin-top: 150px;
-  height: 500px;
+  height: 600px;
+  width: 35%;
+}
+
+#signup {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  height: 700px;
+  width: 35%;
+  margin: 20px;
 }
 
 #login-title{
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 500;
+  font-family: 'Berkshire Swash', cursive;
 }
 
 #login-form{
@@ -138,23 +137,29 @@ header {
   flex-wrap: wrap;
 }
 
-input{
-  margin: 50px;
-}
-
 #login-button {
   background-color:#BA1705 ;
   width: 50%;
   padding: 5px;
   border-radius: 5px;
   margin: 5px;
-  color: white
+  color: white;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+#credentials {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 #email, #pass {
   margin: 10px;
   border: #BA1705 1px solid;
   border-radius: 5px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 5px;
 }
 
 #signup-prompt {
@@ -167,17 +172,17 @@ color: gray;
 }
 
 footer {
-  background-color: #b5a57cb7;
+  background-color: #b5a57c;
   color: white;
   display: flex;
   text-align: center;
-  flex-direction: column;
+  flex-direction: column;  
+  padding: 20px;         
 }
 
 #footer-links {
   display: flex;
   flex-direction: row;
-  margin: 20px;
   justify-content: flex-end;
 }
 
@@ -185,7 +190,6 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-left: 50px;
   margin-right: 50px;
 }
 
@@ -197,3 +201,7 @@ footer {
   .links {
     text-decoration: solid;
   }
+
+.special {
+  font-family: 'Berkshire Swash', cursive;
+}

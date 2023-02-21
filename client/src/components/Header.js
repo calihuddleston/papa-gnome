@@ -1,15 +1,22 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import Login from "./Login";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Routes,
+} from "react-router-dom";
+import Signup from "./Signup";
 
 const Header = () => {
   return (
     <div>
       <div id="nav-section">
-        <h4 id="papa-header">Shop Papa Gnome</h4>
+        <h4 id="papa-header">Papa Gnome Delivers</h4>
 
         <nav id="nav-bar">
-          <a href="#home" className="page-links">
+          <a href="/" className="page-links">
             <Icon
               icon="game-icons:mushroom-house"
               style={{ fontSize: "30px" }}
@@ -30,11 +37,7 @@ const Header = () => {
         </nav>
       </div>
 
-      <header>
-        <div className="flex justify-center text-xl flex-col">
-          <Login id="login-link" />
-        </div>
-      </header>
+      <header></header>
     </div>
   );
 };
