@@ -1,13 +1,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import Login from "./Login";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Routes,
-} from "react-router-dom";
-import Signup from "./Signup";
+import { Link } from "react-router-dom";
+import Stores from "./Stores";
 
 const Header = () => {
   return (
@@ -22,9 +16,9 @@ const Header = () => {
               style={{ fontSize: "30px" }}
             />
           </a>
-          <a href="#stores" className="page-links">
+          <Link to="/storefront" element={<Stores />} className="page-links">
             <Icon icon="bx:store" style={{ fontSize: "30px" }} />
-          </a>
+          </Link>
           <a href="#book-me" className="page-links">
             <Icon icon="mdi:calendar-cursor" style={{ fontSize: "30px" }} />
           </a>

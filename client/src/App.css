@@ -40,18 +40,7 @@
   }
 }
 body {
-  position: relative;
-  height: 900px;
-  max-height: 900px;
-  min-height: 700px; 
-  width: 100%;
-  background:
-  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2522584033613445) 0%),
-    url('./assets/produce-table.jpg') 
-    no-repeat center;
-  background-size: cover !important;
-  -webkit-background-size: cover !important;
-  text-align: center;
+  scroll-behavior: smooth;
 } 
 #papa-header {
   font-family: 'Berkshire Swash', cursive;
@@ -98,6 +87,18 @@ body {
 #login-section {
   display: flex;
   justify-content: center;
+  position: relative;
+  height: 800px;
+  max-height: 800px;
+  min-height: 600px; 
+  width: 100%;
+  background:
+  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2522584033613445) 0%),
+    url('./assets/produce-table.jpg') 
+    no-repeat center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  text-align: center;
 }
 
 #login{
@@ -109,6 +110,7 @@ body {
   border-radius: 10px;
   height: 600px;
   width: 35%;
+  align-self: center;
 }
 
 #signup {
@@ -121,6 +123,7 @@ body {
   height: 700px;
   width: 35%;
   margin: 20px;
+  align-self: center;
 }
 
 #login-title{
@@ -204,4 +207,49 @@ footer {
 
 .special {
   font-family: 'Berkshire Swash', cursive;
+}
+
+#store-section {
+  position: relative;
+  height: 900px;
+  max-height: 900px;
+  min-height: 700px; 
+  width: 100%;
+  background:
+  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2522584033613445) 0%),
+    url('./assets/storeImg.jpg') 
+    no-repeat center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  text-align: center;
+}
+
+#column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-content: center;
+  text-align: center;
+}
+
+#row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.dg {
+  width: 425px;
+  height: 240px;
+}
+
+.storeImg {
+  border-radius: 5px;
+  animation: grow 2s ease;
+}
+
+@keyframes grow {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
 }
