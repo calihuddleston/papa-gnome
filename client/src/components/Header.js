@@ -2,6 +2,7 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 import Stores from "./Stores";
+import Calendar from "./Calendar"
 
 const Header = () => {
   return (
@@ -19,9 +20,9 @@ const Header = () => {
           <Link to="/storefront" element={<Stores />} className="page-links">
             <Icon icon="bx:store" style={{ fontSize: "30px" }} />
           </Link>
-          <a href="#book-me" className="page-links">
+          <Link to="/bookme" element={<Calendar />} className="page-links">
             <Icon icon="mdi:calendar-cursor" style={{ fontSize: "30px" }} />
-          </a>
+          </Link>
           <a href="#cart" className="page-links">
             <Icon icon="tabler:garden-cart" style={{ fontSize: "30px" }} />
           </a>

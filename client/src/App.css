@@ -237,16 +237,25 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+ margin: 50px;
 }
 
-.dg {
-  width: 425px;
-  height: 240px;
+.store{
+  padding: 50px;
+  border-radius: 5px;
+  height: 300px;
+  width: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .storeImg {
   border-radius: 5px;
   animation: grow 2s ease;
+ height: auto;
+
 }
 
 @keyframes grow {
