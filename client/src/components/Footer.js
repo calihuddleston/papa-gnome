@@ -1,9 +1,16 @@
 import React from "react";
+import { BsFacebook } from "react-icons/bs"
+import { FaTiktok } from "react-icons/fa"
+
 
 const Footer = () => {
   return (
     <div>
       <footer>
+      <div id="social-links">
+            <BsFacebook />
+            <FaTiktok />
+          </div>
         <div id="footer-links">
           <div id="overview">
             <h4 className="font-bold">Overview</h4>
@@ -41,11 +48,11 @@ const Footer = () => {
             {" "}
             Designed and Developed by{" "}
             <a
-              href="https://www.calihuddleston.com"
+              href="https://www.facebook.com/dreamsite.dev"
               target="_blank"
               rel="noreferrer noopener"
             >
-              Cali Huddleston
+              DreamSite Dev
             </a>
           </p>
         </div>

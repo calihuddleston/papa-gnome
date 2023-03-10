@@ -183,6 +183,12 @@ footer {
   padding: 20px;         
 }
 
+#social-links {
+  display: flex;
+  font-size: 25px;
+  margin: 0px 50px;
+}
+
 #footer-links {
   display: flex;
   flex-direction: row;
@@ -203,6 +209,7 @@ footer {
 
   .links {
     text-decoration: solid;
+    margin: 15px 0px;
   }
 
 .special {
@@ -211,17 +218,24 @@ footer {
 
 #store-section {
   position: relative;
-  height: 900px;
-  max-height: 900px;
-  min-height: 700px; 
+  height: 400px;
+  max-height: 400px;
+  min-height: 100px; 
   width: 100%;
   background:
   linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2522584033613445) 0%),
-    url('./assets/storeImg.jpg') 
+    url('./assets/produce-table.jpg') 
     no-repeat center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
-  text-align: center;
+  font-size: 80px;
+  font-family: 'Berkshire Swash', cursive;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ 
 }
 
 #column {
@@ -242,21 +256,27 @@ footer {
 
 .store{
   padding: 50px;
-  border-radius: 5px;
   height: 300px;
   width: 500px;
-  overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  animation: grow 2s ease;
 }
 
 .storeImg {
   border-radius: 5px;
-  animation: grow 2s ease;
  height: auto;
-
 }
+
+#heart {
+  font-size: 25px;
+  display: flex;
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+
+
 
 @keyframes grow {
   from { transform: scale(0); }

@@ -26,6 +26,11 @@ const Login = () => {
             </Link>
           </span>
         </p>
+        <p id="signup-prompt">Forgot password?{" "}
+        <span id="signup-link">
+          <a href="#reset-password">Click Here</a>
+        </span>
+        </p>
       </div>
     </section>
   );
